@@ -1,0 +1,75 @@
+body{
+    background-color:rgb(184, 244, 95);
+    
+}
+.government{
+    text-align: center;
+    margin-top: 15%;
+    
+}
+.Extra{
+    text-align: center;
+}
+.Academics{
+    text-align: center;
+}
+.social{
+    display: flex;
+    top: 80%;
+    margin-left: 21%;
+
+}
+.social a{
+    width: 50px;
+    height: 50px;
+    text-align:center ;
+    text-decoration: none;
+    color:#000000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+    bottom: -255px;
+    left: 27%;
+}
+
+.social a .fab{
+    font-size: 30px;
+    line-height:  50px; 
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+
+}
+.social a .fa-regular{
+    font-size: 30px;
+    line-height:  50px; 
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+
+}
+.social a::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: -90px;
+        left: 0;
+        background: linear-gradient(-45deg, #f30c0c, #d8f40a);
+        position: absolute;
+        transition: 0.5s;
+}
+.social a:hover::after{
+    top: 0;
+}
+.social a:hover .fab{
+    color: #fff;
+}
+.social a:hover .fa-regular{
+    color: #fff;
+}
+.social a:hover{
+    transform: translateY(-10px);
+}
